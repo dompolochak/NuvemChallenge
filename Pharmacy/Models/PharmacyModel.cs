@@ -3,9 +3,7 @@ namespace Pharmacy.Models
 {
 	public class PharmacyModel
 	{
-		public PharmacyModel()
-		{
-		}
+		public int Id { get; set; }
 
 		public string Name { get; set; }
 

@@ -1,0 +1,7 @@
+
+CREATE TRIGGER dbo.set_last_update ON dbo.Pharmacies
+AFTER UPDATE
+AS
+UPDATE dbo.Pharmacies
+SET LastUpdate = GETDATE()
+WHERE Name IN (SELECT DISTINCT Name FROM inserted);
