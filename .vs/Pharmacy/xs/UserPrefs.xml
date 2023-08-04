@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{2EE3AFD9-E3FC-4249-B1FD-B4AE91E8D9A3}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pharmacy/Controllers/PharmacyController.cs">
+    <Files>
+      <File FileName="Pharmacy/Program.cs" Line="26" Column="1" />
+      <File FileName="Pharmacy/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="Pharmacy/Controllers/PharmacyController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Pharmacy" expanded="True">
+            <Node name="Pharmacy" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Pharmacy PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
