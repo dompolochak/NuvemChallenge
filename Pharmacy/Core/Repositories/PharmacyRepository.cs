@@ -10,20 +10,6 @@ namespace Pharmacy.Core.Repositories
 		public PharmacyRepository(ApiDBContext context, ILogger logger): base(context, logger)
 		{
 		}
-
-		//public override async Task<PharmacyModel?> GetByID(int id)
-		//{
-		//	try
-		//	{
-		//		return await _context.Pharmacies.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
-		//	}
-		//	catch(Exception e)
-		//	{
-		//		Console.Write(e);
-		//		throw;
-		//	}
-		//} 
-
 	}
 }
 

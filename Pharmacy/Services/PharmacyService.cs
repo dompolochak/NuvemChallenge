@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Pharmacy.Core;
+﻿using Pharmacy.Core;
 using Pharmacy.Core.Repositories;
 using Pharmacy.Data;
 using Pharmacy.Models;
@@ -33,13 +31,21 @@ namespace Pharmacy.Services
 
         public async Task<bool> Add(PharmacyModel pharmacy)
         {
+            pharmacy.CreationDate = DateTime.Now;
             return await Pharmacies.Add(pharmacy);
         }
 
-        public bool Update(PharmacyModel pharmacy)
+        public async Task<bool> Update(PharmacyModel pharmacy)
         {
+            var existingPharmacy = await Pharmacies.GetByID(pharmacy.Id);
+            if(existingPharmacy == null)
+            {
+                return false;
+            }
+            existingPharmacy.Copy(pharmacy);
             pharmacy.LastUpdate = DateTime.Now;
-            return Pharmacies.Update(pharmacy);
+            await CompleteAsync();
+            return true;
         }
 
         public async Task<bool> Delete(PharmacyModel pharmacy)
